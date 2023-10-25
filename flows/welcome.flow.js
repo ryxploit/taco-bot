@@ -27,7 +27,7 @@ const day = now.getDay(); // 0 para Domingo, 1 para Lunes, etc.
 
 console.log(`La hora actual es: ${hour}`);
 
-if ((day === 2) || (hour < 0 || hour >= 24)) {
+if ((day === 1) || (hour < 0 || hour >= 24)) {
     await flowDynamic("Estamos fuera de nuestro horario de atención.", { delay: 3000 });
     await flowDynamic("Nuestro horario es de Lunes a Sábado, de 8:00 AM a 10:00 PM.", { delay: 3000 });
     await flowDynamic("¡Esperamos verte durante ese tiempo! Vuelve luego, por favor.", { delay: 3000 });
@@ -36,11 +36,11 @@ if ((day === 2) || (hour < 0 || hour >= 24)) {
 })
 .addAnswer(" ", {
 media:
-  "https://dash.hous.com.mx/images/portada.png"
-})
+  "https://dash.hous.com.mx/images/logo_taqueria.jpeg"
+}, { delay: 1000} )
 .addAnswer(
 [
-  "Bivenido a *Taqueria El Pariente* 🤠",
+  "Bivenido a *Taqueria Raymundo* 🌮",
   "",
   "✨ Los mejores tacos a los mejores precios ✨"
 ], { delay: 3000 }
@@ -55,7 +55,7 @@ media:
 "*5️⃣* Ver direccion del local 🗺️",
 ], { delay: 3000 })
 .addAnswer("👉 Escribe solo el *numero* de la opcion deseada.",
-  { delay: 3000, capture: true}, 
+  { delay: 1000, capture: true}, 
   async (ctx, { fallBack, state, gotoFlow }) => {
     //Creamos un stado de la respuesta del usuario
     state.update({ message_user: ctx.body });

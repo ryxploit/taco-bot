@@ -20,21 +20,21 @@ const googelSheet = new GoogleSheetService(
 */
 
 module.exports = addKeyword(EVENTS.ACTION /*##FLUJO_CONFIRMO_PEDIDO_PEDIDO_CONFIRMO_FLUJO## */)
-.addAnswer('Tu pedido está casi listo, solo nos falta unos datos', { delay: 2000 })
-.addAnswer('‼️FAVOR DE ESCRIBIR TUS DATOS CORRECTAMENTE YA QUE CON ESO NOS BASAREMOS PARA DARTE UNA MEJOR ATENCION, GRACIAS!‼️', { delay: 2000 })
+/*.addAnswer('Tu pedido está casi listo, solo nos falta unos datos', { delay: 2000 })*/
+/*.addAnswer('‼️FAVOR DE ESCRIBIR TUS DATOS CORRECTAMENTE YA QUE CON ESO NOS BASAREMOS PARA DARTE UNA MEJOR ATENCION, GRACIAS!‼️', { delay: 2000 })*/
 .addAnswer([
 "¿Como será el tipo de entrega?",
 " ",
-"Escoge la opción deseada",
+"Escoge la opción deseada.",
 " ",
-"1️⃣ Envío a *domicilio* 🏠",
+"1️⃣ Servicio a *domicilio* 🏠",
 "2️⃣ *Pasar a recogerlo* al establecimiento 🛵",
 " "
 ],
 { delay: 2500, capture: true },
 async (ctx, { state, gotoFlow }) => {
   if(ctx.body.trim() === '1'){
-    state.update({ envioPedido: 'Envío a domicilio' });
+    state.update({ envioPedido: 'Servicio a domicilio' });
   }else if(ctx.body.trim() === '2'){
     state.update({ envioPedido: 'Pasará a recoger el pedido' });
     await gotoFlow(recogerPedidoFlow);
@@ -43,13 +43,13 @@ async (ctx, { state, gotoFlow }) => {
   }    
 }
 )
-.addAnswer(
+/*.addAnswer(
 "¿Con cuanto vas a *pagar* 💵?",
 { delay: 2500, capture: true },
 async (ctx, { state }) => {
   state.update({ montoPago: ctx.body });
 }
-)
+)*/
 .addAnswer(
 "¿Cual es tu *nombre* y *apellido* 📝 ?",
 { delay: 2500, capture: true },
@@ -58,11 +58,11 @@ async (ctx, { state }) => {
   state.update({name: nombre})
 }
 )
-.addAction(async (_, { state, flowDynamic }) => {
+/*.addAction(async (_, { state, flowDynamic }) => {
 const currentState = state.getMyState()
 return flowDynamic(`Un gusto atenderte el dia de hoy, ${currentState.name}`)
 }
-)
+)*/
 .addAnswer([
 "Porfavor dime tu *Direccion completa* 🏘️ ", 
 "a donde enviaremos tu pedido "],
@@ -71,12 +71,12 @@ async (ctx, { state }) => {
   state.update({ direccion: ctx.body });
 }
 )
-.addAction(async (_, { state, flowDynamic }) => {
+/*.addAction(async (_, { state, flowDynamic }) => {
 const currentState = state.getMyState()
 return flowDynamic(`Gracias por la informacion, ${currentState.name}`)
 }
-)
-.addAnswer("Dame un momento, estoy creando tu pedido ⌛....", { delay: 3500 })
+)*/
+/*.addAnswer("Dame un momento, estoy creando tu pedido ⌛....", { delay: 3500 })*/
 /*.addAnswer(["Detalles de tu pedido",
 "------------------------------",
 "Taqueria el pariente",
@@ -85,7 +85,7 @@ return flowDynamic(`Gracias por la informacion, ${currentState.name}`)
 { delay: 3500 }
 )*/
 .addAnswer(
-"Perfecto, tu pedido estará listo en aprox 30 a 50 min 👌",
+"Gracias por tu preferencia 🤖",
 { delay: 2500 },
 async (ctx, { state }) => {
   const currentState = state.getMyState();
@@ -100,9 +100,8 @@ async (ctx, { state }) => {
   })
 }
 )
-.addAnswer(["Gracias por tu preferencia 🤖", 
-" ",
-"Escribe 0️⃣ para volver a empezar 🔙"],
+.addAnswer(
+"Escribe 0️⃣ para volver a empezar 🔙",
 { delay: 2500 },
 async({ endFlow }) => {
 await endFlow();

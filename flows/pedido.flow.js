@@ -26,16 +26,13 @@ module.exports = addKeyword(EVENTS.ACTION)
   "📩 Estoy listo para tomar su pedido",
   " ",
   "¿Cual es su *orden*? 🌮 ",
-], { delay: 5000 }
-)
-.addAnswer([
-  "*Ejemplo*: 2 tacos de asada, 1 papa loca de asada y",
-  "dos chorreadas de asada."], 
-  { delay: 3000 }, async () => {
+], { delay: 1000 }, async () => {
   await chatGPT.handleMsgChatGPT(PROMP)
   }
 )
-.addAnswer("Puedes escribir 0️⃣ para volver a empezar 🔙.",
+.addAnswer([
+  "*Ejemplo*: 2 tacos de asada, 1 papa loca de asada y",
+  "dos chorreadas de asada."] /*"Puedes escribir 0️⃣ para volver a empezar 🔙."*/,
 { delay: 2000, capture: true },
 async (ctx, { state, fallBack, gotoFlow }) => {
   let fallbackCount = state.get('fallbackCount') || 0; // Cambiado a 'let'

@@ -11,18 +11,16 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 const pedidoFlow = require("./pedido.flow");
 const welcomeFlow = require('./welcome.flow')
 
-
 /*
 * Flujo menu
 */
 
 module.exports = addKeyword(EVENTS.ACTION)
-.addAnswer("📩 Te estoy enviando el menú...", { delay: 2000})
+.addAnswer("👇 Este es nuestro menú", { delay: 2000})
 .addAnswer(" ", {
   media:
-    "https://dash.hous.com.mx/images/menu.png"
-}, {delay: 2000})
-.addAnswer("☝️ Este es nuestro menú", { delay: 5000 })
+    "https://dash.hous.com.mx/images/menu_taqueria.jpg"
+}, { delay: 2000 })
 .addAnswer([
   "Escoge la opción deseada",
   " ",

@@ -20,7 +20,7 @@ const googelSheet = new GoogleSheetService(
 
 module.exports = addKeyword(EVENTS.ACTION)
 .addAnswer(
-    "Perfecto, ¿Cual es tu *nombre* y *apellido* 📝 con el que pasarar a recogerlo?",
+    "Perfecto, ¿Cual es tu *nombre* y *apellido* 📝 con el que pasaras a recogerlo?",
     { delay: 2000, capture: true },
     async (ctx, { state }) => {
         const nombre = ctx.body.trim(); // Asegúrate de que el nombre se esté capturando correctamente
@@ -41,7 +41,8 @@ module.exports = addKeyword(EVENTS.ACTION)
       direccion: currentState.direccion,
     })
   })
-.addAnswer("Gracias por tu preferencia 🤖, escribe 0️⃣ para volver a empezar 🔙",
+.addAnswer(["Gracias por tu preferencia 🤖", 
+"Escribe 0️⃣ para volver a empezar 🔙"],
  { delay: 2500 },
  async({ endFlow }) => {
   await endFlow();
