@@ -15,6 +15,11 @@
         "@bot-whatsapp/provider": "latest",
         "@bot-whatsapp/portal": "latest",
         "@whiskeysockets/baileys": "^6.4.0",
+        "bot-ws-plugin-openai": "^1.0.6",
+        "chatgpt": "^5.2.5",
+        "dotenv": "^16.3.1",
+        "google-auth-library": "^8.8.0",
+        "google-spreadsheet": "^4.1.0",
         "wa-sticker-formatter": "4.3.2"
     },
     "author": "",
