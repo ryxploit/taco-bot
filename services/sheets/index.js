@@ -65,6 +65,7 @@ class GoogleSheetService {
       envioPedido: data.envioPedido,
       montoPago: data.montoPago,
       direccion: data.direccion,
+      sugerencia: data.sugerencia,
     });
 
     return order

@@ -13,10 +13,20 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 */
 
 module.exports = addKeyword(EVENTS.ACTION)
-.addAnswer("🕜 Nuestro Horario es: ", { delay: 3000, })
-.addAnswer(
-["Lunes a Viernes",
-"De 6:00 - 10:00 PM"],
-{ delay: 3000, }
-)
-.addAnswer("Puedes escribir *inicio* para ver mas opciones 🔙", { delay: 3000, });
+.addAnswer([
+  "🕜 Horario de atención: ",
+  "",
+  "Miercoles a Lunes",
+  "",
+  "De *6:30 PM - 12:30 AM*",
+  "",
+  "El servicio a domicilio es de *7:00 PM a 11:30 PM*",
+  "",
+  "*Completamente Gratis*",
+  "",
+  "Escribe 0️⃣ para volver al menú de inicio 🔙"], 
+  { delay: 3000 },
+   async(_, { endFlow }) => {
+    await endFlow();
+   }
+);

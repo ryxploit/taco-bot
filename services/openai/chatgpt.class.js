@@ -2,7 +2,7 @@ require('dotenv').config()
 
 class ChatGPTClass {
   queue = []; 
-  optionsGPT = { model: "gpt-3.5-turbo-16k" }; /* gpt-3.5-turbo-0301 */
+  optionsGPT = { model: "gpt-3.5-turbo-1106" }; /* gpt-3.5-turbo-0301 gpt-3.5-turbo-16k*/
   openai = undefined;
 
   constructor() {

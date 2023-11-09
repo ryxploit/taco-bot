@@ -13,10 +13,17 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 */
 
 module.exports = addKeyword(EVENTS.ACTION)
-.addAnswer(
-[
-  "Estamos ubicados sobre la av las americas 🌎",
-  "Colonia Villa Verde, #4002 🏘️",
-  "Puedes escribir *inicio* para ver mas opciones 🔙"
-], { delay: 3000 }
+.addAnswer([
+  "Estamos ubicados sobre Calle Guillermo Nelson 🌎",
+  "",
+  "esquina con Zaragoza (a un costado del parque Zaragoza) 🏘️",
+  "",
+  "*Presiona aqui* para indicaciones 👇",
+  "https://maps.app.goo.gl/DcDZufomCUc7tBJU7",
+  "",
+  "Escribe 0️⃣ para volver al menú de inicio 🔙"], 
+  { delay: 3000 },
+   async(_, { endFlow }) => {
+    await endFlow();
+   }
 );

@@ -9,18 +9,17 @@ const {
 const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 
 /*
-* Flujo horarios
+* Flujo direccion
 */
 
 module.exports = addKeyword(EVENTS.ACTION)
 .addAnswer([
-  "Nuestro servicio abarca toda la colonia Villa Verde 🏘️",
+  "Se canceló el proceso por inactividad",
   "",
-  "El envio a otra colonia costaria *$35.00* pesos extra 💰",
-  "",
-  "Escribe 0️⃣ para volver al menú de inicio 🔙"], 
-  { delay: 3000 },
-   async(_, { endFlow }) => {
+  "Gracias por su preferencia 🔙"], 
+  { delay: 3000 }, // idle: 180000 = 3 minutos
+   async(_, { endFlow, state }) => {
+    await state.update({ pedidos: [] });
     await endFlow();
    }
 );

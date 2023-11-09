@@ -21,30 +21,22 @@ const googelSheet = new GoogleSheetService(
 
 module.exports = addKeyword(EVENTS.ACTION)
 .addAnswer(
-    "Perfecto, nombre y apellido quien recogerá el pedido 📝",
+    "Tu opinión es muy importante para nosotros y queremos conocerla para mejorar nuestro servicio.",
     { 
       delay: 2000,
       capture: true,
-      idle: 300000, // Configuración de tiempo de inactividad (3 minutos) 
+      idle: 300000, // Configuración de tiempo de inactividad (3 minutos)
      },
     async (ctx, { state, gotoFlow, inRef }) => {
         if (ctx?.idleFallBack) {
           return gotoFlow(inactividadFlow); // Si hay inactividad, ir al flujo de inactividad
         }
-
-        const nombre = ctx.body.trim(); // Asegúrate de que el nombre se esté capturando correctamente
-        await state.update({ nombre: nombre });
+        await state.update({ sugerencia: ctx.body });
     }
 )
 .addAnswer([
-  "*¡Gracias!* por tu preferencia 🤖",
+  "*Gracias* por tus sugerencias, las tomaremos en cuenta para darte un mejor servicio 🤖",
   "",
   "Escribe 0️⃣ para volver al menú de inicio 🔙"],
-  { 
-    delay: 2500
-   },
-   async(_, { endFlow, state }) => {
-    await state.update({ pedidos: [] });
-    await endFlow();
-   }
+  { delay: 2500 }
   );
