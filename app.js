@@ -78,8 +78,8 @@ const main = async () => {
     const adapterFlow = createFlow([flowPrincipal])
 
     const adapterProvider = createProvider(TwilioProvider, {
-        accountSid: 'AC145f343a8d98a180e5f34b528db0da7a',
-        authToken: '8e5d7faba638677846fbbc91f3d5bd2d',
+        accountSid: 'AC7638649cfc7203b4811175ddfdcc1673',
+        authToken: 'b1ab8df7c388a1c6f6f4af1117b4895a',
         vendorNumber: '+14155238886',
     })
 
