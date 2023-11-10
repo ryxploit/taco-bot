@@ -1,7 +1,6 @@
-require('dotenv').config()
 const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
 
-const MetaProvider = require('@bot-whatsapp/provider/meta')
+const TwilioProvider = require('@bot-whatsapp/provider/twilio')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
 /**
@@ -60,26 +59,28 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword('hola')
-.addAnswer(
-    'Aqui va un mensaje',
-    {
-        capture: true,
-    },
-    async (ctx, {provider}) => {
-        await provider.sendtext(ctx.from, 'mensaje')
-    }
-)
+const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
+    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+    .addAnswer(
+        [
+            'te comparto los siguientes links de interes sobre el proyecto',
+            '👉 *doc* para ver la documentación',
+            '👉 *gracias*  para ver la lista de videos',
+            '👉 *discord* unirte al discord',
+        ],
+        null,
+        null,
+        [flowDocs, flowGracias, flowTuto, flowDiscord]
+    )
 
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([flowPrincipal])
 
-    const adapterProvider = createProvider(MetaProvider, {
-        jwtToken: process.env.JWT_TOKEN,
-        numberId: process.env.NUMBER_ID,
-        verifyToken: process.env.VERIFY_TOKEN,
-        version: 'v16.0'
+    const adapterProvider = createProvider(TwilioProvider, {
+        accountSid: 'AC145f343a8d98a180e5f34b528db0da7a',
+        authToken: '8e5d7faba638677846fbbc91f3d5bd2d',
+        vendorNumber: '+14155238886',
     })
 
     createBot({

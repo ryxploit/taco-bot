@@ -1,10 +1,10 @@
 {
-    "name": "base-meta-memory",
+    "name": "base-twilio-memory",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
     "scripts": {
-        "pre-copy": "cd .. && npm run  copy.lib base-meta-memory",
+        "pre-copy": "cd .. && npm run  copy.lib base-twilio-memory",
         "start": "node app.js"
     },
     "keywords": [],
@@ -13,10 +13,10 @@
         "@bot-whatsapp/cli": "latest",
         "@bot-whatsapp/database": "latest",
         "@bot-whatsapp/provider": "latest",
-        "axios": "^1.2.1",
         "body-parser": "^1.20.1",
         "dotenv": "^16.3.1",
-        "polka": "^0.5.2"
+        "polka": "^0.5.2",
+        "twilio": "3.84.1"
     },
     "devDependencies": {
         "eslint": "^8.52.0",
