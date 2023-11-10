@@ -60,19 +60,16 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
     [flowSecundario]
 )
 
-const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
-    .addAnswer(
-        [
-            'te comparto los siguientes links de interes sobre el proyecto',
-            '👉 *doc* para ver la documentación',
-            '👉 *gracias*  para ver la lista de videos',
-            '👉 *discord* unirte al discord',
-        ],
-        null,
-        null,
-        [flowDocs, flowGracias, flowTuto, flowDiscord]
-    )
+const flowPrincipal = addKeyword('hola')
+.addAnswer(
+    'Aqui va un mensaje',
+    {
+        capture: true,
+    },
+    async (ctx, {provider}) => {
+        await provider.sendtext(ctx.from, 'mensaje')
+    }
+)
 
 const main = async () => {
     const adapterDB = new MockAdapter()
