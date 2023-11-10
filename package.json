@@ -1,29 +1,26 @@
 {
-    "name": "base-bailey-memory",
+    "name": "base-meta-memory",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
     "scripts": {
-        "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
+        "pre-copy": "cd .. && npm run  copy.lib base-meta-memory",
         "start": "node app.js"
     },
     "keywords": [],
     "dependencies": {
-        "@bot-whatsapp/bot": "^0.1.33",
-        "@bot-whatsapp/cli": "^0.1.33",
-        "@bot-whatsapp/database": "^0.1.33",
-        "@bot-whatsapp/portal": "^0.1.33",
-        "@bot-whatsapp/provider": "^0.1.33",
-        "@whiskeysockets/baileys": "^6.4.0",
-        "bot-ws-plugin-openai": "^1.0.6",
-        "chatgpt": "^5.2.5",
+        "@bot-whatsapp/bot": "latest",
+        "@bot-whatsapp/cli": "latest",
+        "@bot-whatsapp/database": "latest",
+        "@bot-whatsapp/provider": "latest",
+        "axios": "^1.2.1",
+        "body-parser": "^1.20.1",
         "dotenv": "^16.3.1",
-        "eslint-plugin-bot-whatsapp": "^0.0.2-alpha.0",
-        "google-auth-library": "^8.8.0",
-        "google-spreadsheet": "^4.1.0",
-        "link-preview-js": "^3.0.5",
-        "moment": "^2.29.4",
-        "wa-sticker-formatter": "4.3.2"
+        "polka": "^0.5.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.52.0",
+        "eslint-plugin-bot-whatsapp": "latest"
     },
     "author": "",
     "license": "ISC"
