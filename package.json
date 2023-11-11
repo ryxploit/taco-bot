@@ -11,8 +11,10 @@
     "dependencies": {
         "@bot-whatsapp/bot": "latest",
         "@bot-whatsapp/cli": "latest",
+        "@bot-whatsapp/contexts": "^0.1.34",
         "@bot-whatsapp/database": "latest",
         "@bot-whatsapp/provider": "latest",
+        "@google-cloud/dialogflow-cx": "^4.2.0",
         "body-parser": "^1.20.1",
         "dotenv": "^16.3.1",
         "polka": "^0.5.2",
