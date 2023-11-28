@@ -1,0 +1,219 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'ECB41484D1AD7AE953383F5F7E4BEAF4',
+    participant: undefined
+  },
+  messageTimestamp: 1701157937,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: 'Rocavit',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Rocavit',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e1597db1-59b9-4899-b872-7ae26abc9222',
+  keyword: 'key_8b2b5136-7934-4a89-b2d2-986b36283e0d',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd0930692fa206e7022a73108bad63078'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_119f2d69-27a0-4e63-ba71-61465371eab6',
+  keyword: 'ans_e1597db1-59b9-4899-b872-7ae26abc9222',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'd56d36a1f3487c1d14794eca1f617cee'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '03FACD021F87CF23DF1A1F54932739C7',
+    participant: undefined
+  },
+  messageTimestamp: 1701157949,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '3C60F2D8466E2A7C5A76CBE653937BF5',
+    participant: undefined
+  },
+  messageTimestamp: 1701157962,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '3 tacos de asada',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3 tacos de asada',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
+  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 2000,
+    idle: 300000,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10a6310fad2c5942afb530873c75da27'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
+  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 2000,
+    idle: 300000,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10a6310fad2c5942afb530873c75da27'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
+  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 2000,
+    idle: 300000,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10a6310fad2c5942afb530873c75da27'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '437E0FE058148B905118B89A43CE8B87',
+    participant: undefined
+  },
+  messageTimestamp: 1701157972,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
+  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 2000,
+    idle: 300000,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10a6310fad2c5942afb530873c75da27'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
+  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 2000,
+    idle: 300000,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '10a6310fad2c5942afb530873c75da27'
+}
