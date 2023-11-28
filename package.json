@@ -4,17 +4,17 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "prestart": "npx eslint .",
+        
         "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
         "start": "node app.js"
     },
     "keywords": [],
     "dependencies": {
-        "@bot-whatsapp/bot": "latest",
-        "@bot-whatsapp/cli": "latest",
-        "@bot-whatsapp/database": "latest",
-        "@bot-whatsapp/portal": "latest",
-        "@bot-whatsapp/provider": "latest",
+        "@bot-whatsapp/bot": "^0.1.33",
+        "@bot-whatsapp/cli": "^0.1.33",
+        "@bot-whatsapp/database": "^0.1.33",
+        "@bot-whatsapp/portal": "^0.1.33",
+        "@bot-whatsapp/provider": "^0.1.33",
         "@whiskeysockets/baileys": "6.5.0",
         "cache-manager": "5.2.4",
         "chatgpt": "^5.2.5",
@@ -24,7 +24,7 @@
     },
     "devDependencies": {
         "eslint": "^8.52.0",
-        "eslint-plugin-bot-whatsapp": "latest"
+        "eslint-plugin-bot-whatsapp": "^0.1.35"
     },
     "author": "",
     "license": "ISC"

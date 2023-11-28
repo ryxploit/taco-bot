@@ -104,34 +104,34 @@ module.exports = addKeyword(EVENTS.ACTION)
               // Expresión regular para encontrar el texto entre comillas dobles
               const regex = /"([^"]*)"/;
               const match = regex.exec(pedidoCorregido);
-
+            
               if (!match || !match[1]) {
                 return 'No se encontró ningún pedido válido en la cadena proporcionada.';
               }
-
+            
               const pedidoString = match[1];
-
+            
               // Ahora solo dividimos por comas dentro de las comillas dobles
               const elementos = pedidoString.split(', ');
-
+            
               let total = 0;
               const resumen = [];
-
+            
               elementos.forEach(elemento => {
                 const partes = elemento.split(' ');
-
+            
                 const cantidad = parseInt(partes[0]);
-                const tipoProducto = partes.slice(1, -3).join(' ');
-                const tipoCarne = partes[partes.length - 3];
+                const tipoProducto = partes.slice(1, -2).join(' '); // Corregir aquí
+                const tipoCarne = partes[partes.length - 2]; // Corregir aquí
                 const precio = parseFloat(partes[partes.length - 1].replace('$', ''));
-
+            
                 const subtotal = precio;
                 total += subtotal;
-
+            
                 resumen.push(`${cantidad} ${tipoProducto} ${tipoCarne ? 'de ' + tipoCarne : ''} $${subtotal.toFixed(2)}`);
               });
-
-              const resumenFinal = `Pedido recibido con éxito.
+            
+                const resumenFinal = `Pedido recibido con éxito.
 -------------------------------- 
 
 Tu pedido incluye:\n${resumen.map(line => line.trim().padEnd(30)).join('\n')}

@@ -16,10 +16,6 @@ const inactividadFlow = require("./flows/inactividad.flow");
 
 
 
-
-
-
-
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([

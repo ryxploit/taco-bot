@@ -2,25 +2,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'ECB41484D1AD7AE953383F5F7E4BEAF4',
+    id: '871B2852CD7F6058723258004DE0C892',
     participant: undefined
   },
-  messageTimestamp: 1701157937,
+  messageTimestamp: 1701215498,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: 'Rocavit',
+    conversation: 'Hola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Rocavit',
+  body: 'Hola',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e1597db1-59b9-4899-b872-7ae26abc9222',
-  keyword: 'key_8b2b5136-7934-4a89-b2d2-986b36283e0d',
+  ref: 'ans_c26a1c73-7f70-48c8-9506-9094a5da2cd1',
+  keyword: 'key_9dc4a84b-538e-455a-9b69-bebcc5504997',
   answer: '__call_action__',
   options: {
     media: null,
@@ -29,16 +29,15 @@
     child: null,
     delay: 0,
     idle: null,
-    ref: null,
     nested: [],
     keyword: {},
     callback: true
   },
-  refSerialize: 'd0930692fa206e7022a73108bad63078'
+  refSerialize: '4e2b694e514246fde55a5013f020c9ab'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_119f2d69-27a0-4e63-ba71-61465371eab6',
-  keyword: 'ans_e1597db1-59b9-4899-b872-7ae26abc9222',
+  ref: 'ans_6acf82d9-a9db-4253-8de6-3f7b2a9b7850',
+  keyword: 'ans_c26a1c73-7f70-48c8-9506-9094a5da2cd1',
   answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
     '\n' +
     '✨ Los del parque zaragoza ✨\n' +
@@ -60,21 +59,20 @@
     child: null,
     delay: 3000,
     idle: 300000,
-    ref: null,
     nested: [],
     keyword: {},
     callback: true
   },
-  refSerialize: 'd56d36a1f3487c1d14794eca1f617cee'
+  refSerialize: '3aa8a99c83cfa0c8ab41f7831a7b8827'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '03FACD021F87CF23DF1A1F54932739C7',
+    id: 'AEBD19F07901EDB3AB61B325ACB2CAEF',
     participant: undefined
   },
-  messageTimestamp: 1701157949,
+  messageTimestamp: 1701215508,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -91,25 +89,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '3C60F2D8466E2A7C5A76CBE653937BF5',
+    id: '54D82C668E4A6DBC8268DB536726B1AC',
     participant: undefined
   },
-  messageTimestamp: 1701157962,
+  messageTimestamp: 1701215516,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '3 tacos de asada',
+    conversation: '3 tacos de asada y una quesadilla de tripa',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '3 tacos de asada',
+  body: '3 tacos de asada y una quesadilla de tripa',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
-  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
+  ref: 'ans_ef56bb0b-ec5a-4f8a-9c0a-c41e97a28492',
+  keyword: 'ans_69426bad-e193-4b1a-a7b9-183bd9d73685',
   answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
   options: {
     media: null,
@@ -118,57 +116,40 @@
     child: null,
     delay: 2000,
     idle: 300000,
-    ref: null,
     nested: [ [Object], [Object], [Object], [Object], [Object] ],
     keyword: {},
     callback: true
   },
-  refSerialize: '10a6310fad2c5942afb530873c75da27'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
-  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 2000,
-    idle: 300000,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '10a6310fad2c5942afb530873c75da27'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
-  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 2000,
-    idle: 300000,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '10a6310fad2c5942afb530873c75da27'
+  refSerialize: '01768da1ffb0ac5b44675d339069e262'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '437E0FE058148B905118B89A43CE8B87',
+    id: '3F09241324680F6210E2AE62B34D31DF',
     participant: undefined
   },
-  messageTimestamp: 1701157972,
+  messageTimestamp: 1701215527,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: 'Un agua chica',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Un agua chica',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'F0D71EDDE290E5818006EEB82C7435F4',
+    participant: undefined
+  },
+  messageTimestamp: 1701215542,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -181,39 +162,82 @@
   body: '3',
   from: '5216692714607'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
-  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 2000,
-    idle: 300000,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '50658E548C1643ABD8DEC27A2479DA74',
+    participant: undefined
   },
-  refSerialize: '10a6310fad2c5942afb530873c75da27'
+  messageTimestamp: 1701215567,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '681C59D68F576F18723D1B47506FA3DF',
+    participant: undefined
+  },
+  messageTimestamp: 1701215578,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'B5385EC06B74373793F2C96D6BB5A755',
+    participant: undefined
+  },
+  messageTimestamp: 1701215585,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: 'Jsjs',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Jsjs',
+  from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_947ae4c3-27af-4410-85c4-01872784dfaa',
-  keyword: 'ans_46b386ff-2e91-4d41-a5cc-ecb971b053f8',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  ref: 'ans_ba646fc5-a50b-4549-bde0-0695b72dc019',
+  keyword: 'ans_f885206f-c6e1-41b7-a42b-4551c716889a',
+  answer: '*¡Gracias!* por tu preferencia 🤖\n' +
+    '\n' +
+    'Escribe 0️⃣ para volver al menú de inicio 🔙',
   options: {
     media: null,
     buttons: [],
-    capture: true,
+    capture: false,
     child: null,
-    delay: 2000,
-    idle: 300000,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    delay: 2500,
+    idle: null,
+    nested: [],
     keyword: {},
     callback: true
   },
-  refSerialize: '10a6310fad2c5942afb530873c75da27'
+  refSerialize: 'f4aada6795b2ac198d9a8885482905c0'
 }
