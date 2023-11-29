@@ -97,7 +97,7 @@ module.exports = addKeyword(EVENTS.ACTION)
 
             // Enviar el pedido completo a ChatGPT
             const pedidoCorregido = await chatGPT.handleMsgChatGPT(pedidosFinal);
-            //console.log(pedidoCorregido);
+            console.log(pedidoCorregido);
             const messageFinal = procesarPedido(pedidoCorregido.text);
 
             function procesarPedido(pedidoCorregido) {
