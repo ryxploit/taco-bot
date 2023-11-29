@@ -1,8 +1,8 @@
-require('dotenv').config()
+require('dotenv').config();
 
 class ChatGPTClass {
-  queue = []; 
-  optionsGPT = { model: "gpt-4-1106-preview" }; /* gpt-3.5-turbo-1106 gpt-4-1106-preview gpt-3.5-turbo-0301 gpt-3.5-turbo-16k gpt-3.5-turbo-instruct*/
+  queue = [];
+  optionsGPT = { model: "gpt-3.5-turbo" };
   openai = undefined;
 
   constructor() {
@@ -10,7 +10,7 @@ class ChatGPTClass {
   }
 
   /**
-   * Esta funciona inicializa
+   * Esta función inicializa la instancia de ChatGPTAPI.
    */
   init = async () => {
     try {
@@ -20,20 +20,25 @@ class ChatGPTClass {
       });
     } catch (error) {
       console.error("Error al inicializar ChatGPTAPI:", error);
+      throw error; // Propaga el error para que pueda ser manejado por la aplicación.
     }
   };
   
+  /**
+   * Maneja el mensaje con ChatGPTAPI y actualiza la cola de conversación.
+   * @param {Object} body - Cuerpo del mensaje.
+   * @returns {Object} - Respuesta de ChatGPTAPI.
+   */
   handleMsgChatGPT = async (body) => {
     try {
+      const conversationId = this.queue.length ? this.queue[this.queue.length - 1].conversationId : undefined;
+      const parentMessageId = this.queue.length ? this.queue[this.queue.length - 1].id : undefined;
+
       const interaccionChatGPT = await this.openai.sendMessage(body, {
-        conversationId: !this.queue.length
-          ? undefined
-          : this.queue[this.queue.length - 1].conversationId,
-        parentMessageId: !this.queue.length
-          ? undefined
-          : this.queue[this.queue.length - 1].id,
+        conversationId,
+        parentMessageId,
       });
-  
+
       this.queue.push(interaccionChatGPT);
       return interaccionChatGPT;
     } catch (error) {
@@ -41,7 +46,6 @@ class ChatGPTClass {
       throw error; // Propaga el error para que pueda ser manejado por la aplicación.
     }
   };
-  
 }
 
 module.exports = ChatGPTClass;

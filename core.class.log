@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '871B2852CD7F6058723258004DE0C892',
+    id: '361F41533F7E2D99FC730D62BE101877',
     participant: undefined
   },
-  messageTimestamp: 1701215498,
+  messageTimestamp: 1701234197,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -19,8 +19,8 @@
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c26a1c73-7f70-48c8-9506-9094a5da2cd1',
-  keyword: 'key_9dc4a84b-538e-455a-9b69-bebcc5504997',
+  ref: 'ans_36171071-e2d1-4b94-a7a8-dd4204c5cbdd',
+  keyword: 'key_4154dbbd-32f3-45b7-9e05-ca3977b850e2',
   answer: '__call_action__',
   options: {
     media: null,
@@ -33,11 +33,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '4e2b694e514246fde55a5013f020c9ab'
+  refSerialize: 'cc8aa76639f3c6b82879d8815dc8f157'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_6acf82d9-a9db-4253-8de6-3f7b2a9b7850',
-  keyword: 'ans_c26a1c73-7f70-48c8-9506-9094a5da2cd1',
+  ref: 'ans_f4574904-8080-4e05-8011-32a1ab57889c',
+  keyword: 'ans_36171071-e2d1-4b94-a7a8-dd4204c5cbdd',
   answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
     '\n' +
     '✨ Los del parque zaragoza ✨\n' +
@@ -63,16 +63,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '3aa8a99c83cfa0c8ab41f7831a7b8827'
+  refSerialize: 'abe9c546c3bcf91092d11ffbf96b95cd'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'AEBD19F07901EDB3AB61B325ACB2CAEF',
+    id: '2E9E526C48B0637DEF8D9FA8478CED71',
     participant: undefined
   },
-  messageTimestamp: 1701215508,
+  messageTimestamp: 1701234217,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -89,25 +89,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '54D82C668E4A6DBC8268DB536726B1AC',
+    id: '8D6FB3A4C1DB5B44EAC1378BA47EADE2',
     participant: undefined
   },
-  messageTimestamp: 1701215516,
+  messageTimestamp: 1701234233,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '3 tacos de asada y una quesadilla de tripa',
+    conversation: '3 tacos de asada',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '3 tacos de asada y una quesadilla de tripa',
+  body: '3 tacos de asada',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ef56bb0b-ec5a-4f8a-9c0a-c41e97a28492',
-  keyword: 'ans_69426bad-e193-4b1a-a7b9-183bd9d73685',
+  ref: 'ans_5be7a6bb-92fb-4a36-b653-9c8bfd992e94',
+  keyword: 'ans_c85ccbb2-5292-41b2-aaf3-89cea2f222d8',
   answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
   options: {
     media: null,
@@ -120,36 +120,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '01768da1ffb0ac5b44675d339069e262'
+  refSerialize: '098490f5cf3c245fa8f102b8a75da9e8'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '3F09241324680F6210E2AE62B34D31DF',
+    id: 'A7D2AC6C828BA8265EAC143CE6CAA11B',
     participant: undefined
   },
-  messageTimestamp: 1701215527,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    conversation: 'Un agua chica',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Un agua chica',
-  from: '5216692714607'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: 'F0D71EDDE290E5818006EEB82C7435F4',
-    participant: undefined
-  },
-  messageTimestamp: 1701215542,
+  messageTimestamp: 1701234241,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -166,10 +146,10 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '50658E548C1643ABD8DEC27A2479DA74',
+    id: '6EACEDE43A74EA2CD72A442C351678A7',
     participant: undefined
   },
-  messageTimestamp: 1701215567,
+  messageTimestamp: 1701234257,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -186,10 +166,10 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '681C59D68F576F18723D1B47506FA3DF',
+    id: '6763E15E98D43E561CBFF56CE6211091',
     participant: undefined
   },
-  messageTimestamp: 1701215578,
+  messageTimestamp: 1701234270,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -206,25 +186,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'B5385EC06B74373793F2C96D6BB5A755',
+    id: '71237058D500CF25B1A599241BB1251A',
     participant: undefined
   },
-  messageTimestamp: 1701215585,
+  messageTimestamp: 1701234305,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: 'Jsjs',
+    conversation: 'Jdjd',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Jsjs',
+  body: 'Jdjd',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_ba646fc5-a50b-4549-bde0-0695b72dc019',
-  keyword: 'ans_f885206f-c6e1-41b7-a42b-4551c716889a',
+  ref: 'ans_31aaf64f-14e2-4b68-a808-1a3819f9a6fa',
+  keyword: 'ans_466d7136-ab16-4469-9df3-a7e921998fcf',
   answer: '*¡Gracias!* por tu preferencia 🤖\n' +
     '\n' +
     'Escribe 0️⃣ para volver al menú de inicio 🔙',
@@ -239,5 +219,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'f4aada6795b2ac198d9a8885482905c0'
+  refSerialize: 'b5fae40a2b8c2a802b4a45b73ba82ad6'
 }

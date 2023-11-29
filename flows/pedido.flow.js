@@ -45,11 +45,11 @@ module.exports = addKeyword(EVENTS.ACTION)
         const pedidos = [];
 
         // Agregar el pedido actual al estado
-        await pedidos.push(ctx.body);
+         pedidos.push(ctx.body);
         await state.update({ pedidos });
       } catch (error) {
         console.error('Ocurrió un error con chatgpt:', error);
-        await flowDynamic('Ocurrió un error. Por favor, inténtalo de nuevo escribiendo 0️⃣.');
+        await flowDynamic('Se ha producido un error, posiblemente porque solicitaste algo que no está en el menú. Te pedimos que lo intentes de nuevo, ingresando 0️⃣.');
         return endFlow();
       }
     })
@@ -97,7 +97,7 @@ module.exports = addKeyword(EVENTS.ACTION)
 
             // Enviar el pedido completo a ChatGPT
             const pedidoCorregido = await chatGPT.handleMsgChatGPT(pedidosFinal);
-            console.log(pedidoCorregido);
+            //console.log(pedidoCorregido);
             const messageFinal = procesarPedido(pedidoCorregido.text);
 
             function procesarPedido(pedidoCorregido) {
@@ -106,7 +106,7 @@ module.exports = addKeyword(EVENTS.ACTION)
               const match = regex.exec(pedidoCorregido);
             
               if (!match || !match[1]) {
-                return 'No se encontró ningún pedido válido en la cadena proporcionada.';
+                return 'Se ha producido un error, posiblemente porque solicitaste algo que no está en el menú. Te pedimos que lo intentes de nuevo, ingresando 3️⃣.';
               }
             
               const pedidoString = match[1];
