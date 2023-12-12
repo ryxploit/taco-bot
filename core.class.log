@@ -2,25 +2,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '361F41533F7E2D99FC730D62BE101877',
+    id: 'AF579CB3CD70D76CD9',
     participant: undefined
   },
-  messageTimestamp: 1701234197,
+  messageTimestamp: 1702420980,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hola',
+  body: 'hola',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_36171071-e2d1-4b94-a7a8-dd4204c5cbdd',
-  keyword: 'key_4154dbbd-32f3-45b7-9e05-ca3977b850e2',
+  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
   answer: '__call_action__',
   options: {
     media: null,
@@ -33,11 +33,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'cc8aa76639f3c6b82879d8815dc8f157'
+  refSerialize: '5fb0df06882df8bb892046664285a430'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f4574904-8080-4e05-8011-32a1ab57889c',
-  keyword: 'ans_36171071-e2d1-4b94-a7a8-dd4204c5cbdd',
+  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
+  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
   answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
     '\n' +
     '✨ Los del parque zaragoza ✨\n' +
@@ -63,20 +63,20 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'abe9c546c3bcf91092d11ffbf96b95cd'
+  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '2E9E526C48B0637DEF8D9FA8478CED71',
+    id: 'DA1A432BFDD3A36C1B',
     participant: undefined
   },
-  messageTimestamp: 1701234217,
+  messageTimestamp: 1702420988,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '1',
+    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -89,14 +89,270 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '8D6FB3A4C1DB5B44EAC1378BA47EADE2',
+    id: '258C5F78DEC1C13E4B',
     participant: undefined
   },
-  messageTimestamp: 1701234233,
+  messageTimestamp: 1702420996,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '3 tacos de asada',
+    extendedTextMessage: ExtendedTextMessage {
+      text: '10 tacos de asada',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '10 tacos de asada',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
+  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: 300000,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '5fb0df06882df8bb892046664285a430'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '145319065035CB6AB2',
+    participant: undefined
+  },
+  messageTimestamp: 1702421006,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '3 tacos  de tripa',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3 tacos  de tripa',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '1C705777CF7FB5D897',
+    participant: undefined
+  },
+  messageTimestamp: 1702421025,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5216692714607'
+}
+Error al encolar (ID ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721): Queue cleared
+Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '5fb0df06882df8bb892046664285a430'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '5fb0df06882df8bb892046664285a430'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
+  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: 300000,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '3D28FC2C5D0C1A7DB2',
+    participant: undefined
+  },
+  messageTimestamp: 1702421028,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: '3', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
+  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
+  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '0176FAF532CD675EA7',
+    participant: undefined
+  },
+  messageTimestamp: 1702421034,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'AE15624C4F0E38907A',
+    participant: undefined
+  },
+  messageTimestamp: 1702421045,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '3 tacos de asada',
+      contextInfo: [ContextInfo]
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -106,34 +362,57 @@
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5be7a6bb-92fb-4a36-b653-9c8bfd992e94',
-  keyword: 'ans_c85ccbb2-5292-41b2-aaf3-89cea2f222d8',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen. *Si no responde en 2 min, vuelva a escribir*. Gracias.',
+  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
+  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
+  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
   options: {
     media: null,
     buttons: [],
     capture: true,
     child: null,
-    delay: 2000,
+    delay: 0,
     idle: 300000,
     nested: [ [Object], [Object], [Object], [Object], [Object] ],
     keyword: {},
     callback: true
   },
-  refSerialize: '098490f5cf3c245fa8f102b8a75da9e8'
+  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'A7D2AC6C828BA8265EAC143CE6CAA11B',
+    id: '4D78653B9FE655B97B',
     participant: undefined
   },
-  messageTimestamp: 1701234241,
+  messageTimestamp: 1702421055,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '3',
+    extendedTextMessage: ExtendedTextMessage {
+      text: '2 tacos de tripa',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2 tacos de tripa',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '6996F03DF1FA444F63',
+    participant: undefined
+  },
+  messageTimestamp: 1702421057,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: '3', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -146,14 +425,14 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '6EACEDE43A74EA2CD72A442C351678A7',
+    id: '0F1500BEF19B4D5BC5',
     participant: undefined
   },
-  messageTimestamp: 1701234257,
+  messageTimestamp: 1702421064,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '1',
+    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -166,14 +445,14 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '6763E15E98D43E561CBFF56CE6211091',
+    id: '82438438479ADBF4C5',
     participant: undefined
   },
-  messageTimestamp: 1701234270,
+  messageTimestamp: 1702421066,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: '2',
+    extendedTextMessage: ExtendedTextMessage { text: '2', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -186,25 +465,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '71237058D500CF25B1A599241BB1251A',
+    id: '4041FA6C090A7A92E4',
     participant: undefined
   },
-  messageTimestamp: 1701234305,
+  messageTimestamp: 1702421069,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    conversation: 'Jdjd',
+    extendedTextMessage: ExtendedTextMessage { text: 'sc', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Jdjd',
+  body: 'sc',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_31aaf64f-14e2-4b68-a808-1a3819f9a6fa',
-  keyword: 'ans_466d7136-ab16-4469-9df3-a7e921998fcf',
+  ref: 'ans_559a5048-8fe4-4467-8126-bc7ec5476b6c',
+  keyword: 'ans_0572e67c-a8bf-4870-a00f-a216805cf317',
   answer: '*¡Gracias!* por tu preferencia 🤖\n' +
     '\n' +
     'Escribe 0️⃣ para volver al menú de inicio 🔙',
@@ -219,5 +498,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'b5fae40a2b8c2a802b4a45b73ba82ad6'
+  refSerialize: 'd0f9b1733c0e0d932f581b84b70a72b5'
 }

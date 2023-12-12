@@ -75,6 +75,8 @@ async (ctx, { state, gotoFlow }) => {
   await state.update({ direccion: ctx.body });
 })
 .addAnswer([
+"Si no hay en existencia algun Producto el encargado se pondra en contacto con usted ☎️",
+"",
 "*¡Gracias!* por tu preferencia 🤖",
 "",
 "Escribe 0️⃣ para volver al menú de inicio 🔙"],
