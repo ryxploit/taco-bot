@@ -6,16 +6,22 @@ const {
 
 const confirmarFlow = require('./confirmar.flow');
 const inactividadFlow = require("./inactividad.flow");
-const { generarCorreccion } = require("../promp/ai-propia");
+const { generarCorreccion } = require("../AI/AI");
 
 const IDLE_TIMEOUT = 300000; // 5 minutes
 const FALBACK_LIMIT = 10;
 
 let contadorRespuestas = 0;
 
-module.exports = addKeyword(EVENTS.ACTION)
+module.exports = addKeyword(EVENTS.ACTION) 
   .addAnswer(
-    ["Estoy listo para tomar su pedido 📝", ""],
+    [ "Estoy listo para tomar su pedido 📝",
+    "",
+    "¿Cual es su *orden*? 🌮 ",
+    "",
+    "*Ejemplo*: *3* tacos de tripa, *1* quesadilla de tripa y *un* vampiro de asada.",
+    "",
+    "Favor de especificar el *tipo de carne* (asada, tripa)"],
     {
       media: "https://dash.hous.com.mx/images/menu_hectors_tacos.png",
       delay: 2000,
@@ -76,40 +82,62 @@ module.exports = addKeyword(EVENTS.ACTION)
 
           function procesarPedido(pedidoCorregido) {
             try {
-              const correccion = pedidoCorregido.correccion;
-              const total = pedidoCorregido.total || 0;
-
+              const menu = {
+                'taco': 33,
+                'quesadilla': 60,
+                'chorreada': 60,
+                'vampiro': 50,
+                'taco de harina': 50,
+                'orden de carne': 260,
+                'media orden': 170,
+                'agua chica': 20,
+                'litro de agua': 30,
+                'refresco vidrio': 20,
+                'refresco': 30,
+                'cebolla asada': 0,
+                'chiles': 0,
+                'cebollita': 0
+              };
+          
+              const correccion = pedidoCorregido.correccion.toLowerCase();
+          
               const resumenLineas = correccion.split(', ').map(item => {
-                const match = item.match(/(\d+)\s+(tacos|quesadilla)\s+de\s+(asada|tripa)\s+\$(\d+)/i);
-                if (match) {
-                  const [_, cantidad, producto, ingrediente, precio] = match;
-                  return `${cantidad} ${producto} de ${ingrediente} $${precio}`;
-                } else {
-                  // Manejar el formato incorrecto aquí, si es necesario
-                  return 'Formato incorrecto';
+                for (let producto in menu) {
+                  if (item.includes(producto)) {
+                    const cantidad = item.match(/(\d+|uno|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez)/)[1];
+                    const tipoCarne = item.match(/(asada|tripa|pollo)/) ? item.match(/(asada|tripa|pollo)/)[1] : '';
+                    const precio = menu[producto] * cantidad; // calculate total price for each product
+                    return `${cantidad} ${producto} ${tipoCarne ? 'de ' + tipoCarne : ''} $${precio}`;
+                  }
                 }
+                return 'Formato incorrecto';
               }).join('\n');
-
+          
+              const total = resumenLineas.split('\n').reduce((sum, line) => {
+                const price = line.match(/\$(\d+)/);
+                return sum + (price ? Number(price[1]) : 0);
+              }, 0);
+          
               const formattedTotal = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(total);
-
-              const resumenFinal = `
-Pedido recibido con éxito.
+          
+              const resumenFinal = `Pedido recibido con éxito.
 -------------------------------- 
 Tu pedido incluye:
 ${resumenLineas}
-
+          
 Total de: ${formattedTotal}
 El tiempo estimado de entrega es de 30 a 50 minutos.
-Escribe 1️⃣ para confirmar.
-    `;
-
+Escribe 1️⃣ para confirmar.`;
+          
               return resumenFinal;
             } catch (error) {
               console.error('Error procesando el pedido:', error);
               throw new Error('Ocurrió un error al procesar el pedido.');
             }
           }
-
+          
+          
+          
           fallbackCount++;
           await state.update({ fallbackCount });
 

@@ -2,25 +2,25 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'AF579CB3CD70D76CD9',
+    id: 'F6E0864844AE98B905',
     participant: undefined
   },
-  messageTimestamp: 1702420980,
+  messageTimestamp: 1703362702,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
+    extendedTextMessage: ExtendedTextMessage { text: 'gfdg', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'hola',
+  body: 'gfdg',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
+  ref: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  keyword: 'key_9f7e0007-8e57-439e-a84c-51f097975a72',
   answer: '__call_action__',
   options: {
     media: null,
@@ -33,11 +33,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '5fb0df06882df8bb892046664285a430'
+  refSerialize: '53e1de85d05c2f58b3f65cb37c8383dd'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
-  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
+  ref: 'ans_15f363be-055c-40fd-a28f-6b2d7296a8a3',
+  keyword: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
   answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
     '\n' +
     '✨ Los del parque zaragoza ✨\n' +
@@ -63,16 +63,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
+  refSerialize: '52ba3d3da61e9286796512f8f5bd8fc0'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: 'DA1A432BFDD3A36C1B',
+    id: 'D75BDED82733735644',
     participant: undefined
   },
-  messageTimestamp: 1702420988,
+  messageTimestamp: 1703362741,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -89,15 +89,15 @@
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '258C5F78DEC1C13E4B',
+    id: 'E1CDC9249CE7A45F8F',
     participant: undefined
   },
-  messageTimestamp: 1702420996,
+  messageTimestamp: 1703362755,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: '10 tacos de asada',
+      text: 'tres tacos de asada 2 tacos de tripa dos agua chica dos refresco',
       contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
@@ -105,12 +105,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: '10 tacos de asada',
+  body: 'tres tacos de asada 2 tacos de tripa dos agua chica dos refresco',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
-  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
+  ref: 'ans_0a0ec920-5cd2-4c8f-b038-e570a16891df',
+  keyword: 'ans_3da86354-08fc-4f52-a76d-c4e306e90106',
   answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
   options: {
     media: null,
@@ -123,292 +123,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '5fb0df06882df8bb892046664285a430'
+  refSerialize: 'd20ea05582122672f278f7d955a0c203'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '145319065035CB6AB2',
+    id: '15CDFB66D842D7A95D',
     participant: undefined
   },
-  messageTimestamp: 1702421006,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '3 tacos  de tripa',
-      contextInfo: [ContextInfo]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '3 tacos  de tripa',
-  from: '5216692714607'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: '1C705777CF7FB5D897',
-    participant: undefined
-  },
-  messageTimestamp: 1702421025,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hola',
-  from: '5216692714607'
-}
-Error al encolar (ID ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721): Queue cleared
-Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '5fb0df06882df8bb892046664285a430'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  keyword: 'key_45646619-c020-449e-8f0a-ea1d77bdaa2a',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '5fb0df06882df8bb892046664285a430'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
-  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: 300000,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: '3D28FC2C5D0C1A7DB2',
-    participant: undefined
-  },
-  messageTimestamp: 1702421028,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '3', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '3',
-  from: '5216692714607'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
-  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
-    '\n' +
-    '✨ Los del parque zaragoza ✨\n' +
-    '✨ El sabor de mazatlán desde 1980✨\n' +
-    '\n' +
-    '¿Cómo podemos ayudarte?\n' +
-    '\n' +
-    '1️⃣ Hacer un pedido 📝\n' +
-    '2️⃣ Ver horarios 🕔\n' +
-    '3️⃣ Zonas de entrega 🛵\n' +
-    '4️⃣ Dirección del local 🗺️\n' +
-    '5️⃣ Sugerencias 🗒️\n' +
-    '\n' +
-    '👉 Escribe solo el *número* de la opción deseada.',
-  options: {
-    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 3000,
-    idle: 300000,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_98e5d387-6176-4006-aefc-be982f99e6de',
-  keyword: 'ans_928b6f0d-3f88-496c-912b-eb4036d4992f',
-  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
-    '\n' +
-    '✨ Los del parque zaragoza ✨\n' +
-    '✨ El sabor de mazatlán desde 1980✨\n' +
-    '\n' +
-    '¿Cómo podemos ayudarte?\n' +
-    '\n' +
-    '1️⃣ Hacer un pedido 📝\n' +
-    '2️⃣ Ver horarios 🕔\n' +
-    '3️⃣ Zonas de entrega 🛵\n' +
-    '4️⃣ Dirección del local 🗺️\n' +
-    '5️⃣ Sugerencias 🗒️\n' +
-    '\n' +
-    '👉 Escribe solo el *número* de la opción deseada.',
-  options: {
-    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 3000,
-    idle: 300000,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '724d1caec36b326f02d0a5e656b0a5a0'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: '0176FAF532CD675EA7',
-    participant: undefined
-  },
-  messageTimestamp: 1702421034,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '1',
-  from: '5216692714607'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: 'AE15624C4F0E38907A',
-    participant: undefined
-  },
-  messageTimestamp: 1702421045,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '3 tacos de asada',
-      contextInfo: [ContextInfo]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '3 tacos de asada',
-  from: '5216692714607'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c4fb1f11-2e15-4ad3-81e4-918c27f70721',
-  keyword: 'ans_a7f7fc2a-b310-480b-96e9-91b95cebdd50',
-  answer: '¿Agregar algo más al pedido? Indíquelo o escriba 3️⃣ para el resumen.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: 300000,
-    nested: [ [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '3cc6b72310c6cf0960141bd43a1c28d1'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: '4D78653B9FE655B97B',
-    participant: undefined
-  },
-  messageTimestamp: 1702421055,
-  pushName: 'Carlos Leon',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '2 tacos de tripa',
-      contextInfo: [ContextInfo]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '2 tacos de tripa',
-  from: '5216692714607'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5216692714607@s.whatsapp.net',
-    fromMe: false,
-    id: '6996F03DF1FA444F63',
-    participant: undefined
-  },
-  messageTimestamp: 1702421057,
+  messageTimestamp: 1703362758,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
@@ -425,14 +149,14 @@ Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '0F1500BEF19B4D5BC5',
+    id: 'BFA655B97FB292BF1948D035CAA4EFEC',
     participant: undefined
   },
-  messageTimestamp: 1702421064,
+  messageTimestamp: 1703368846,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '1', contextInfo: [ContextInfo] },
+    conversation: '1',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -445,14 +169,14 @@ Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '82438438479ADBF4C5',
+    id: 'DCB273A78391318D93F97B8AB13F6FE1',
     participant: undefined
   },
-  messageTimestamp: 1702421066,
+  messageTimestamp: 1703368851,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '2', contextInfo: [ContextInfo] },
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
@@ -465,25 +189,25 @@ Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
   key: {
     remoteJid: '5216692714607@s.whatsapp.net',
     fromMe: false,
-    id: '4041FA6C090A7A92E4',
+    id: 'C00B3B563F5BC1D3DCA230883526B4AA',
     participant: undefined
   },
-  messageTimestamp: 1702421069,
+  messageTimestamp: 1703368855,
   pushName: 'Carlos Leon',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: 'sc', contextInfo: [ContextInfo] },
+    conversation: 'Jfjd',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'sc',
+  body: 'Jfjd',
   from: '5216692714607'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_559a5048-8fe4-4467-8126-bc7ec5476b6c',
-  keyword: 'ans_0572e67c-a8bf-4870-a00f-a216805cf317',
+  ref: 'ans_11329421-bdba-4ebf-8586-1319c0d1a808',
+  keyword: 'ans_eed843c0-ecec-4d15-a614-18af59659300',
   answer: '*¡Gracias!* por tu preferencia 🤖\n' +
     '\n' +
     'Escribe 0️⃣ para volver al menú de inicio 🔙',
@@ -498,5 +222,333 @@ Error al encolar (ID ans_928b6f0d-3f88-496c-912b-eb4036d4992f): Queue cleared
     keyword: {},
     callback: true
   },
-  refSerialize: 'd0f9b1733c0e0d932f581b84b70a72b5'
+  refSerialize: '676967881eab56a353372403767a1b83'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '9FF8704EA9B7C33F3A881D74844CB259',
+    participant: undefined
+  },
+  messageTimestamp: 1703368863,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: 'Jdd',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Jdd',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  keyword: 'key_9f7e0007-8e57-439e-a84c-51f097975a72',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '53e1de85d05c2f58b3f65cb37c8383dd'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_15f363be-055c-40fd-a28f-6b2d7296a8a3',
+  keyword: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52ba3d3da61e9286796512f8f5bd8fc0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'E6CDC578E7DAF80218CDD0CF3B5AAE1F',
+    participant: undefined
+  },
+  messageTimestamp: 1703369058,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '313ACC82FE7A7CCF4DF756851D282EAD',
+    participant: undefined
+  },
+  messageTimestamp: 1703369062,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '0',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '0',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  keyword: 'key_9f7e0007-8e57-439e-a84c-51f097975a72',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '53e1de85d05c2f58b3f65cb37c8383dd'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_15f363be-055c-40fd-a28f-6b2d7296a8a3',
+  keyword: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52ba3d3da61e9286796512f8f5bd8fc0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'DAB6843F0BE381E3E5F921A67C54324B',
+    participant: undefined
+  },
+  messageTimestamp: 1703369077,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: '7BFD76CC059A31B909742514D1F6A80B',
+    participant: undefined
+  },
+  messageTimestamp: 1703369091,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '0',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '0',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  keyword: 'key_9f7e0007-8e57-439e-a84c-51f097975a72',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '53e1de85d05c2f58b3f65cb37c8383dd'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_15f363be-055c-40fd-a28f-6b2d7296a8a3',
+  keyword: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52ba3d3da61e9286796512f8f5bd8fc0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'C2030FE6F94E0DD91A334F71471D1CCC',
+    participant: undefined
+  },
+  messageTimestamp: 1703369107,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '5216692714607'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5216692714607@s.whatsapp.net',
+    fromMe: false,
+    id: 'C4D59DF8C09C456E246CD78733651FE1',
+    participant: undefined
+  },
+  messageTimestamp: 1703369125,
+  pushName: 'Carlos Leon',
+  broadcast: false,
+  message: Message {
+    conversation: '0',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '0',
+  from: '5216692714607'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  keyword: 'key_9f7e0007-8e57-439e-a84c-51f097975a72',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '53e1de85d05c2f58b3f65cb37c8383dd'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_15f363be-055c-40fd-a28f-6b2d7296a8a3',
+  keyword: 'ans_ea4d21a1-53ac-48e7-958f-8b80388e61d0',
+  answer: '*Bienvenido* a *Hectors Tacos* 🌮\n' +
+    '\n' +
+    '✨ Los del parque zaragoza ✨\n' +
+    '✨ El sabor de mazatlán desde 1980✨\n' +
+    '\n' +
+    '¿Cómo podemos ayudarte?\n' +
+    '\n' +
+    '1️⃣ Hacer un pedido 📝\n' +
+    '2️⃣ Ver horarios 🕔\n' +
+    '3️⃣ Zonas de entrega 🛵\n' +
+    '4️⃣ Dirección del local 🗺️\n' +
+    '5️⃣ Sugerencias 🗒️\n' +
+    '\n' +
+    '👉 Escribe solo el *número* de la opción deseada.',
+  options: {
+    media: 'https://dash.hous.com.mx/images/logo_hectors_tacos.png',
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 3000,
+    idle: 300000,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52ba3d3da61e9286796512f8f5bd8fc0'
 }

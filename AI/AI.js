@@ -6,6 +6,8 @@ function normalizarNombre(item) {
 function palabraANumero(palabra) {
   const numeros = {
     'uno': 1,
+    'un': 1,
+    'una': 1,
     'dos': 2,
     'tres': 3,
     'cuatro': 4,
@@ -16,7 +18,7 @@ function palabraANumero(palabra) {
   return numeros[palabra.toLowerCase()] || parseInt(palabra, 10) || 0;
 }
 
-function calcularCosto(item, cantidad) {
+function calcularCosto(item, cantidad) { 
   const precios = {
     'taco': 33,
     'quesadilla': 60,
@@ -24,11 +26,11 @@ function calcularCosto(item, cantidad) {
     'vampiro': 50,
     'taco de harina': 50,
     'orden de carne': 260,
-    '1/2 orden': 170,
+    'media orden': 170,
     'agua chica': 20,
     'litro de agua': 30,
     'refresco vidrio': 20,
-    'refresco 600mil': 30,
+    'refresco': 30,
     'cebolla asada': 0,
     'chiles': 0,
     'cebollita': 0
@@ -44,7 +46,7 @@ function calcularCosto(item, cantidad) {
 }
 
 function generarCorreccion(pedido) {
-  const articulos = pedido.match(/(\d+|\b(?:uno|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|1\/2 orden|agua chica|litro de agua|refresco vidrio|refresco 600mil|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/g);
+  const articulos = pedido.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|media orden|agua chica|litro de agua|refresco vidrio|refresco|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/g);
 
   if (!articulos) {
     throw new Error('Pedido no válido');
@@ -54,7 +56,7 @@ function generarCorreccion(pedido) {
   let total = 0;
 
   articulos.forEach(articulo => {
-    const [, cantidad, nombre, tipo] = articulo.match(/(\d+|\b(?:uno|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|1\/2 orden|agua chica|litro de agua|refresco vidrio|refresco 600mil|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/);
+    const [, cantidad, nombre, tipo] = articulo.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|media orden|agua chica|litro de agua|refresco vidrio|refresco|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/);
     const cantidadNumerica = palabraANumero(cantidad);
     const costo = calcularCosto(nombre, cantidadNumerica);
     total += costo;
