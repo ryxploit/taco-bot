@@ -18,7 +18,7 @@ function palabraANumero(palabra) {
   return numeros[palabra.toLowerCase()] || parseInt(palabra, 10) || 0;
 }
 
-function calcularCosto(item, cantidad) { 
+function calcularCosto(item, cantidad) {
   const precios = {
     'taco': 33,
     'quesadilla': 60,
@@ -45,8 +45,35 @@ function calcularCosto(item, cantidad) {
   return precios[nombreNormalizado] * cantidad;
 }
 
+// Añade sinónimos para reconocer diferentes nombres de productos
+const sinonimos = {
+  'taco': ['tacos'],
+  'quesadilla': ['queso', 'quesadillas'],
+  'chorreada': ['chorreadas'],
+  'vampiro': ['vampiros'],
+  'taco de harina': ['tacos de harina'],
+  'orden de carne': ['orden de carne asada'],
+  'media orden': ['media orden de carne asada'],
+  'agua chica': ['agua'],
+  'litro de agua': ['litro de agua'],
+  'refresco vidrio': ['refresco en vidrio'],
+  'refresco': ['refrescos','cocacola','coca'],
+  'cebolla asada': ['cebolla asada'],
+  'chiles': ['chiles'],
+  'cebollita': ['cebollita']
+};
+
+function reconocerSinonimo(nombre) {
+  for (const producto in sinonimos) {
+    if (sinonimos[producto].includes(nombre.toLowerCase())) {
+      return producto;
+    }
+  }
+  return nombre;
+}
+
 function generarCorreccion(pedido) {
-  const articulos = pedido.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|media orden|agua chica|litro de agua|refresco vidrio|refresco|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/g);
+  const articulos = pedido.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*([a-záéíóúüñ]+)\s*(de asada|de tripa)?/ig);
 
   if (!articulos) {
     throw new Error('Pedido no válido');
@@ -56,11 +83,12 @@ function generarCorreccion(pedido) {
   let total = 0;
 
   articulos.forEach(articulo => {
-    const [, cantidad, nombre, tipo] = articulo.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*(tacos?|quesadillas?|chorreadas?|vampiros?|tacos? de harina|ordenes? de carne|media orden|agua chica|litro de agua|refresco vidrio|refresco|cebolla asada|chiles|cebollita)\s*(de asada|de tripa)?/);
+    const [, cantidad, nombre, tipo] = articulo.match(/(\d+|\b(?:uno|un|una|dos|tres|cuatro|cinco)\b)\s*([a-záéíóúüñ]+)\s*(de asada|de tripa)?/i);
+    const reconocido = reconocerSinonimo(nombre);
     const cantidadNumerica = palabraANumero(cantidad);
-    const costo = calcularCosto(nombre, cantidadNumerica);
+    const costo = calcularCosto(reconocido, cantidadNumerica);
     total += costo;
-    correccion.push(`${cantidadNumerica} ${nombre}${tipo ? ` ${tipo}` : ''} $${costo}`);
+    correccion.push(`${cantidadNumerica} ${reconocido}${tipo ? ` ${tipo}` : ''} $${costo}`);
   });
 
   return {
@@ -69,15 +97,18 @@ function generarCorreccion(pedido) {
   };
 }
 
+// Ejemplo de uso:
+/*const pedidoEjemplo = "2 tacos de asada, 1 quesadilla, 3 vampiros";
+try {
+  const resultado = generarCorreccion(pedidoEjemplo);
+  console.log(resultado.correccion);
+  console.log("Total: $" + resultado.total);
+} catch (error) {
+  console.error(error.message);
+}*/
+
+
 
 module.exports = { generarCorreccion }
 
-/*
-const pedido = "Quisiera dos quesadillas de asada y cuatro tacos de harina de tripa.";
-try {
-  const resultado = generarCorreccion(pedido);
-  console.log(`Corrección del pedido: ${resultado.correccion}, Total: $${resultado.total}`);
-} catch (error) {
-  console.error(`Error: ${error.message}`);
-}
-*/
+

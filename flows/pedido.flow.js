@@ -13,17 +13,17 @@ const FALBACK_LIMIT = 10;
 
 let contadorRespuestas = 0;
 
-module.exports = addKeyword(EVENTS.ACTION) 
+module.exports = addKeyword(EVENTS.ACTION)
   .addAnswer(
-    [ "Estoy listo para tomar su pedido 📝",
-    "",
-    "¿Cual es su *orden*? 🌮 ",
-    "",
-    "*Ejemplo*: *3* tacos de tripa, *1* quesadilla de tripa y *un* vampiro de asada.",
-    "",
-    "Favor de especificar el *tipo de carne* (asada, tripa)"],
+    ["Estoy listo para tomar su pedido 📝",
+      "",
+      "¿Cual es su *orden*? 🌮 ",
+      "",
+      "*Ejemplo*: *3* tacos de tripa, *1* quesadilla de tripa y *un* vampiro de asada.",
+      "",
+      "Favor de especificar el *tipo de carne* (asada, tripa)"],
     {
-      media: "https://dash.hous.com.mx/images/menu_hectors_tacos.png",
+      media: "https://dialogobot.hous.com.mx/menu_hectors_tacos.jpg",
       delay: 2000,
       capture: true,
       idle: IDLE_TIMEOUT,
@@ -76,7 +76,7 @@ module.exports = addKeyword(EVENTS.ACTION)
           let fallbackCount = state.get('fallbackCount') || 0;
 
           const pedidoCorregido = generarCorreccion(pedidosFinal);
-         console.log(pedidoCorregido);   //Imprimir el arreglo completo usando console.table
+          console.log(pedidoCorregido);   //Imprimir el arreglo completo usando console.table
 
           const messageFinal = procesarPedido(pedidoCorregido);
 
@@ -98,9 +98,9 @@ module.exports = addKeyword(EVENTS.ACTION)
                 'chiles': 0,
                 'cebollita': 0
               };
-          
+
               const correccion = pedidoCorregido.correccion.toLowerCase();
-          
+
               const resumenLineas = correccion.split(', ').map(item => {
                 for (let producto in menu) {
                   if (item.includes(producto)) {
@@ -112,14 +112,14 @@ module.exports = addKeyword(EVENTS.ACTION)
                 }
                 return 'Formato incorrecto';
               }).join('\n');
-          
+
               const total = resumenLineas.split('\n').reduce((sum, line) => {
                 const price = line.match(/\$(\d+)/);
                 return sum + (price ? Number(price[1]) : 0);
               }, 0);
-          
+
               const formattedTotal = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(total);
-          
+
               const resumenFinal = `Pedido recibido con éxito.
 -------------------------------- 
 Tu pedido incluye:
@@ -128,16 +128,16 @@ ${resumenLineas}
 Total de: ${formattedTotal}
 El tiempo estimado de entrega es de 30 a 50 minutos.
 Escribe 1️⃣ para confirmar.`;
-          
+
               return resumenFinal;
             } catch (error) {
               console.error('Error procesando el pedido:', error);
               throw new Error('Ocurrió un error al procesar el pedido.');
             }
           }
-          
-          
-          
+
+
+
           fallbackCount++;
           await state.update({ fallbackCount });
 

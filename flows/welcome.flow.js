@@ -18,7 +18,7 @@ const inactividadFlow = require("./inactividad.flow");
 * Flujo Inicio
 */
 
-module.exports = addKeyword(['Rocavit', '0'] /* EVENTS.WELCOME*/)
+module.exports = addKeyword(EVENTS.WELCOME)
   .addAction(async (_, { flowDynamic, endFlow }) => {
     const date = new Date();
 
@@ -63,7 +63,7 @@ module.exports = addKeyword(['Rocavit', '0'] /* EVENTS.WELCOME*/)
     "👉 Escribe solo el *número* de la opción deseada."
   ],
     {
-      media: "https://dash.hous.com.mx/images/logo_hectors_tacos.png",
+      media: "https://dialogobot.hous.com.mx/logo_hectors_tacos.jpg",
       delay: 3000,
       capture: true,
       idle: 300000
@@ -73,7 +73,7 @@ module.exports = addKeyword(['Rocavit', '0'] /* EVENTS.WELCOME*/)
 
       // Verificamos si ha habido inactividad
       if (ctx?.idleFallBack) {
-        return gotoFlow(inactividadFlow);
+        return gotoFlow(inactividadFlow); 
       }
 
       const currentState = state.getMyState();
