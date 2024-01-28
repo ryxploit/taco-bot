@@ -12,7 +12,9 @@ module.exports = addKeyword(EVENTS.ACTION).addAnswer(
     "",
     "Si desea, por favor, vuelva a escribir su pedido con la información correcta, o si lo prefiere, no dude en comunicarse con nuestra sucursal para obtener asistencia adicional.",
     "",
-    "Gracias por su preferencia 🔙",
+    "*¡Gracias!* por tu preferencia 🤖",
+    "",
+    "Escribe 0️⃣ para volver al menú de inicio 🔙",
   ],
   { delay: 3000 }, // idle: 180000 = 3 minutos
   async (_, { gotoFlow, endFlow, state }) => {

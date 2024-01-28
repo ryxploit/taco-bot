@@ -38,8 +38,8 @@ function calcularCosto(item, cantidad) {
     orden: 260,
     "media orden": 170,
     "agua chica": 20,
-    "litro de agua": 30,
-    "refresco vidrio": 20,
+    litro: 30,
+    refresco: 20,
     refresco: 30,
     "cebolla asada": 0,
     chiles: 0,
@@ -76,7 +76,9 @@ const sinonimos = {
     "Kesadilla",
     "kesadilla",
     "quecas",
+    "quezadiyas"
   ],
+
   chorreada: ["chorreadas"],
   vampiro: ["vampiros", "Bampiro"],
   "taco de harina": [
@@ -86,6 +88,7 @@ const sinonimos = {
     "Tako de arina",
     "Takos de harina",
   ],
+
   orden: [
     "orden de carne",
     "Horden d carne",
@@ -95,10 +98,14 @@ const sinonimos = {
     "Orden d karne",
     "Orden de karne",
   ],
+
   "media orden": ["media orden de carne asada"],
+
   "agua chica": ["agua", "aguas"],
-  "litro de agua": ["litros de agua", "listros"],
-  "refresco vidrio": [
+
+  litro: ["litros de agua", "listros"],
+
+  refresco: [
     "refresco en vidrio",
     "gaseosa",
     "coquita",
@@ -112,6 +119,7 @@ const sinonimos = {
     "cococha",
     "soda",
   ],
+
   refresco: ["refrescos", "cocacola", "coca", "cocas"],
   "cebolla asada": [
     "cebollas asadas",
@@ -122,7 +130,9 @@ const sinonimos = {
     "seboya asada",
     "seboya azada",
   ],
+
   chiles: ["chiles", "chilitos", "chilones", "chilez", "shilez", "shiles"],
+
   cebollita: ["cebollita", "cebollitas"],
 };
 
