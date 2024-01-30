@@ -164,7 +164,7 @@ function procesarPedido(pedidoCorregido) {
 Tu pedido incluye:
 ${resumenLineas}
           
-Total de: ${formattedTotal}
+Total de: *${formattedTotal}*
 
 El tiempo estimado de entrega es de *30* a *50* minutos.
 

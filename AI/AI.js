@@ -57,7 +57,7 @@ function calcularCosto(item, cantidad) {
 }
 
 const sinonimos = {
-  taco: ["tacos", "tac", "tako", "Tacos", "Takos", "taquitos", "tacuaches"],
+  taco: ["tacos","tac","tako", "Tacos","Takos","takos","taquitos","tacuaches"],
   "taco gerber": [
     "tacos gerber",
     "gerber",
