@@ -139,9 +139,9 @@ function procesarPedido(pedidoCorregido) {
               : "";
             const precio = menu[producto] * cantidad;
             const nombreNormalizado = normalizarNombre(producto, cantidad);
-            return `${cantidad} ${nombreNormalizado} ${
+            return `*${cantidad}* ${nombreNormalizado} ${
               tipoCarne ? "de " + tipoCarne : ""
-            } $${precio}`;
+            } *$${precio}*`;
           }
         }
 
@@ -165,9 +165,13 @@ Tu pedido incluye:
 ${resumenLineas}
           
 Total de: ${formattedTotal}
-El tiempo estimado de entrega es de 30 a 50 minutos.
-si deseas agregar algo mas solo escribelo
-*Escribe 1️⃣ para confirmar* o *escriba 5️⃣ si le salió pedido incorrecto*.`;
+
+El tiempo estimado de entrega es de *30* a *50* minutos.
+
+si deseas agregar algo mas solo escribelo.
+
+*Escribe 1️⃣ para confirmar*
+*Escriba 5️⃣ si le salió pedido incorrecto*.`;
 
     return resumenFinal;
   } catch (error) {

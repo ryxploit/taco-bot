@@ -36,7 +36,7 @@ module.exports = addKeyword(EVENTS.WELCOME)
 
     console.log(`La hora actual es: ${hora}`);
 
-    if (dia === "martes" || hora < 0 || hora >= 24) {
+    if (dia === "sabado" || hora < 0 || hora >= 24) {
       await flowDynamic("Estamos fuera de nuestro horario de atención.", {
         delay: 3000,
       });
