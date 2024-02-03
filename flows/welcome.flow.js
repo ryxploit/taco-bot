@@ -41,7 +41,7 @@ module.exports = addKeyword(EVENTS.WELCOME)
         delay: 3000,
       });
       await flowDynamic(
-        "Nuestro horario es de Lunes a Sábado, de 8:00 pM a 11:00 PM.",
+        "Nuestro horario es de Lunes a Sábado, de 8:00 PM a 11:00 PM.",
         { delay: 3000 }
       );
       await flowDynamic(
