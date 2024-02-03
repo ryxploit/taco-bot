@@ -10,7 +10,7 @@ module.exports = addKeyword(EVENTS.ACTION).addAnswer(
   [
     "Lamentamos informarle que el proceso de pedido ha sido cancelado debido a la dificultad para encontrar los artículos en el menú, posiblemente debido a errores de ortografía o la falta de esos productos en nuestra oferta actual.",
     "",
-    "Si desea, por favor, vuelva a escribir su pedido con la información correcta, o si lo prefiere, no dude en comunicarse con nuestra sucursal para obtener asistencia adicional.",
+    "Si desea, por favor, vuelva a escribir su pedido con la información correcta, o si lo prefiere, no dude en comunicarse al *6692380820* para obtener asistencia adicional.",
     "",
     "*¡Gracias!* por tu preferencia 🤖",
     "",
