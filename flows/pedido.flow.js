@@ -171,7 +171,7 @@ El tiempo estimado de entrega es de *30* a *50* minutos.
 si deseas agregar algo mas solo escribelo.
 
 *Escribe 1️⃣ para confirmar*
-*Escriba 5️⃣ si le salió pedido incorrecto*.`;
+*Escribe 5️⃣ si le salió en su orden Pedido Incorrecto*.`;
 
     return resumenFinal;
   } catch (error) {

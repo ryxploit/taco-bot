@@ -8,9 +8,9 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 module.exports = addKeyword(EVENTS.ACTION).addAnswer(
   [
-    "Nuestro servicio abarca toda la colonia Villa Verde 🏘️",
+    "Nuestro servicio abarca hasta la col. Estero 🏘️",
     "",
-    "El envio a otra colonia costaria *$35.00* pesos extra 💰",
+    "El envio a otra colonia tendria costo extra 💰",
     "",
     "Escribe 0️⃣ para volver al menú de inicio 🔙",
   ],

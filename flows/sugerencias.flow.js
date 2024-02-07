@@ -12,7 +12,9 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms))
 
 module.exports = addKeyword(EVENTS.ACTION)
   .addAnswer(
-    "Tu opinión es muy importante para nosotros y queremos conocerla para mejorar nuestro servicio.",
+    "Tu opinión es muy importante para nosotros y queremos conocerla para mejorar nuestro servicio.",
+    "",
+    "*Escribe tu sugerencia o comentario*",
     {
       delay: 2000,
       capture: true,

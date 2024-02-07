@@ -82,7 +82,8 @@ const sinonimos = {
     "Kasadillas",
     "kesadillas",
     "quecas",
-    "quezadiyas"
+    "quezadiyas",
+    "Quesadiyas",
   ],
 
   chorreada: ["chorreadas"],
